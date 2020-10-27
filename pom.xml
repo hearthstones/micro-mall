@@ -11,6 +11,7 @@
 
     <modules>
         <module>mall-gateway</module>
+        <module>mall-monitor</module>
 <!--        <module>mall-auth</module>-->
 <!--        <module>mall-common</module>-->
 <!--        <module>mall-mbg</module>-->
@@ -18,7 +19,6 @@
 <!--        <module>mall-admin</module>-->
 <!--        <module>mall-search</module>-->
 <!--        <module>mall-portal</module>-->
-<!--        <module>mall-monitor</module>-->
     </modules>
 
     <parent>
@@ -45,11 +45,12 @@
         <mybatis-generator.version>1.4.0</mybatis-generator.version>
         <mybatis.version>3.5.5</mybatis.version>
         <mysql-connector.version>8.0.20</mysql-connector.version>
+
+        <admin-starter-server.version>2.2.3</admin-starter-server.version>
 <!--        <spring-data-commons.version>2.3.0.RELEASE</spring-data-commons.version>-->
 <!--        <jjwt.version>0.9.0</jjwt.version>-->
 <!--        <aliyun-oss.version>2.5.0</aliyun-oss.version>-->
 <!--        <logstash-logback.version>5.3</logstash-logback.version>-->
-<!--        <admin-starter-server.version>2.2.3</admin-starter-server.version>-->
 <!--        <minio.version>7.1.0</minio.version>-->
 <!--        <knife4j.version>2.0.4</knife4j.version>-->
 <!--        <nimbus-jose-jwt.version>8.16</nimbus-jose-jwt.version>-->
@@ -200,11 +201,11 @@
 <!--                <version>${logstash-logback.version}</version>-->
 <!--            </dependency>-->
             <!--集成SpringBoot Admin监控-->
-<!--            <dependency>-->
-<!--                <groupId>de.codecentric</groupId>-->
-<!--                <artifactId>spring-boot-admin-starter-server</artifactId>-->
-<!--                <version>${admin-starter-server.version}</version>-->
-<!--            </dependency>-->
+            <dependency>
+                <groupId>de.codecentric</groupId>
+                <artifactId>spring-boot-admin-starter-server</artifactId>
+                <version>${admin-starter-server.version}</version>
+            </dependency>
             <!--MinIO JAVA SDK-->
 <!--            <dependency>-->
 <!--                <groupId>io.minio</groupId>-->
