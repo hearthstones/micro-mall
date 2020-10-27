@@ -4,3 +4,18 @@ server:
 spring:
   application:
     name: mall-monitor
+  # 配置登录名和密码
+  security:
+    user:
+      name: admin
+      password: admin
+  # 整合注册中心。admin-server会自动从注册中心获取服务列表，并获取监控信息
+  cloud:
+    nacos:
+      discovery:
+        server-addr: http://localhost:8848
+  # 不显示mall-monitor的监控信息
+  boot:
+    admin:
+      discovery:
+        ignored-services: ${spring.application.name}
