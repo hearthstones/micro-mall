@@ -28,6 +28,10 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-gateway</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.micro.mall</groupId>
+            <artifactId>mall-common</artifactId>
+        </dependency>
     </dependencies>
 
     <build>

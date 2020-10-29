@@ -9,28 +9,12 @@
         <relativePath>../</relativePath>
     </parent>
 
-    <artifactId>mall-monitor</artifactId>
+    <artifactId>mall-common</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>mall-monitor</name>
-    <description>mall monitor</description>
+    <name>mall-common</name>
+    <description>mall common for project</description>
 
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>de.codecentric</groupId>
-            <artifactId>spring-boot-admin-starter-server</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
-        </dependency>
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>

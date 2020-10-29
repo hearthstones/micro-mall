@@ -13,7 +13,7 @@
         <module>mall-gateway</module>
         <module>mall-monitor</module>
 <!--        <module>mall-auth</module>-->
-<!--        <module>mall-common</module>-->
+        <module>mall-common</module>
 <!--        <module>mall-mbg</module>-->
 <!--        <module>mall-demo</module>-->
 <!--        <module>mall-admin</module>-->
@@ -34,6 +34,7 @@
         <skipTests>true</skipTests>
 <!--        <docker.host>http://192.168.3.101:2375</docker.host>-->
 <!--        <docker.maven.plugin.version>1.2.2</docker.maven.plugin.version>-->
+
         <java.version>1.8</java.version>
         <spring-cloud.version>Hoxton.SR5</spring-cloud.version>
         <spring-cloud-alibaba.version>2.2.0.RELEASE</spring-cloud-alibaba.version>
@@ -53,8 +54,11 @@
 <!--        <logstash-logback.version>5.3</logstash-logback.version>-->
 <!--        <minio.version>7.1.0</minio.version>-->
 <!--        <knife4j.version>2.0.4</knife4j.version>-->
+        <swagger.version>2.9.2</swagger.version>
+
 <!--        <nimbus-jose-jwt.version>8.16</nimbus-jose-jwt.version>-->
-<!--        <mall-common.version>1.0-SNAPSHOT</mall-common.version>-->
+
+        <mall-common.version>0.0.1-SNAPSHOT</mall-common.version>
 <!--        <mall-mbg.version>1.0-SNAPSHOT</mall-mbg.version>-->
     </properties>
 
@@ -106,11 +110,11 @@
                 <scope>import</scope>
             </dependency>
             <!--mall通用模块-->
-<!--            <dependency>-->
-<!--                <groupId>com.macro.mall</groupId>-->
-<!--                <artifactId>mall-common</artifactId>-->
-<!--                <version>${mall-common.version}</version>-->
-<!--            </dependency>-->
+            <dependency>
+                <groupId>com.micro.mall</groupId>
+                <artifactId>mall-common</artifactId>
+                <version>${mall-common.version}</version>
+            </dependency>
             <!--mall中MBG生成模块-->
 <!--            <dependency>-->
 <!--                <groupId>com.macro.mall</groupId>-->
@@ -147,6 +151,17 @@
 <!--                <artifactId>knife4j-micro-spring-boot-starter</artifactId>-->
 <!--                <version>${knife4j.version}</version>-->
 <!--            </dependency>-->
+            <!--Swagger-UI API文档生产工具-->
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>${swagger.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger-ui</artifactId>
+                <version>${swagger.version}</version>
+            </dependency>
 <!--            <dependency>-->
 <!--                <groupId>com.github.xiaoymin</groupId>-->
 <!--                <artifactId>knife4j-spring-boot-starter</artifactId>-->
