@@ -1,0 +1,15 @@
+version: '3.7'
+services:
+  webjenkins:
+    container_name: webjenkins
+    image: 'jenkins/jenkins:lts'
+    restart: always
+    environment:
+      - TZ=Asia/Shanghai
+    ports:
+      - '3083:8080'
+      - '50001:50000'
+    volumes:
+      - ./jenkins-data:/data/jenkins/jenkins_home:z
+      - ./jenkins-data/docker.sock:/var/run/docker.sock
+    network_mode: "bridge"
